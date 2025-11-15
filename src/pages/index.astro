@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
 	<header class="header">
 		<nav class="nav-container">
 			<div class="logo">
-				tiinto
+				Tiinto
 			</div>
 			<button class="mobile-menu-btn" aria-label="Toggle menu">
 				<span class="hamburger"></span>
@@ -24,12 +24,15 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Hero Section -->
 	<section class="hero">
 		<div class="hero-content">
-			<h1 class="hero-title">
-				Soluciones de <span class="accent">software a medida</span> para transformar tu negocio
-			</h1>
+      <h1 class="hero-title">
+        Tiinto, el <span class="accent">taller digital</span> donde tus ideas se convierten en producto
+      </h1>
+
+
 			<p class="hero-subtitle">
-				Desarrollamos software personalizado que impulsa el crecimiento de tu empresa.
-				Desde la idea hasta la implementación, te acompañamos en cada paso.
+				Construimos productos digitales que funcionan.
+        Diseñados para escalar. Pensados para durar.
+        Con un diseño claro y una estética cuidadosa.
 			</p>
 			<div class="hero-cta">
 				<a href="#contacto" class="btn-primary">Comenzar proyecto</a>
@@ -43,283 +46,152 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Services Section -->
 	<section id="servicios" class="services">
-		<div class="services-container">
-			<div class="section-header">
-				<h2 class="section-title">Nuestros <span class="accent">Servicios</span></h2>
-				<p class="section-subtitle">
-					Ofrecemos soluciones tecnológicas completas adaptadas a las necesidades específicas de tu negocio
-				</p>
-			</div>
+  <div class="services-container">
 
-			<div class="services-grid">
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-							<line x1="8" y1="21" x2="16" y2="21"></line>
-							<line x1="12" y1="17" x2="12" y2="21"></line>
-						</svg>
-					</div>
-					<h3 class="service-title">Desarrollo Web</h3>
-					<p class="service-description">
-						Aplicaciones web modernas y escalables con las últimas tecnologías.
-						Desde landing pages hasta plataformas empresariales complejas.
-					</p>
-					<ul class="service-features">
-						<li>React, Next.js, Vue, Astro</li>
-						<li>Progressive Web Apps (PWA)</li>
-						<li>E-commerce y CMS personalizados</li>
-					</ul>
-				</div>
+    <div class="section-header">
+      <h2 class="section-title">Nuestros <span class="accent">Servicios</span></h2>
+      <p class="section-subtitle">
+        Soluciones digitales funcionales, seguras y hermosas.
+      </p>
+    </div>
 
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-							<line x1="12" y1="18" x2="12.01" y2="18"></line>
-						</svg>
-					</div>
-					<h3 class="service-title">Aplicaciones Móviles</h3>
-					<p class="service-description">
-						Apps nativas y multiplataforma que ofrecen experiencias excepcionales
-						en iOS y Android.
-					</p>
-					<ul class="service-features">
-						<li>React Native & Flutter</li>
-						<li>Desarrollo iOS y Android nativo</li>
-						<li>Integración con APIs y servicios</li>
-					</ul>
-				</div>
+    <div class="services-grid">
 
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<circle cx="12" cy="12" r="10"></circle>
-							<polyline points="12 6 12 12 16 14"></polyline>
-						</svg>
-					</div>
-					<h3 class="service-title">APIs & Backend</h3>
-					<p class="service-description">
-						Servicios backend robustos y escalables que potencian tus aplicaciones
-						con arquitecturas modernas.
-					</p>
-					<ul class="service-features">
-						<li>Node.js, Python, Go</li>
-						<li>REST & GraphQL APIs</li>
-						<li>Microservicios y serverless</li>
-					</ul>
-				</div>
+      <!-- Desarrollo Web -->
+      <div class="service-card" data-service>
+        <h3 class="service-title">Desarrollo Web</h3>
+        <p class="service-description">
+          Websites y plataformas a medida, rápidas, estables y bien diseñadas.
+        </p>
 
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-							<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-						</svg>
-					</div>
-					<h3 class="service-title">Consultoría Tech</h3>
-					<p class="service-description">
-						Asesoramiento estratégico en tecnología para tomar las mejores
-						decisiones en tu transformación digital.
-					</p>
-					<ul class="service-features">
-						<li>Auditoría de sistemas</li>
-						<li>Arquitectura de software</li>
-						<li>Optimización de procesos</li>
-					</ul>
-				</div>
+        <div class="service-details">
+          <ul>
+            <li>Aplicaciones web personalizadas</li>
+            <li>Integración con APIs</li>
+            <li>Diseño limpio y estructura clara</li>
+            <li>Bases de datos y backend</li>
+          </ul>
+        </div>
+      </div>
 
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-							<polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-							<line x1="12" y1="22.08" x2="12" y2="12"></line>
-						</svg>
-					</div>
-					<h3 class="service-title">DevOps & Cloud</h3>
-					<p class="service-description">
-						Implementación y gestión de infraestructura en la nube con
-						automatización de despliegues.
-					</p>
-					<ul class="service-features">
-						<li>AWS, Google Cloud, Azure</li>
-						<li>CI/CD pipelines</li>
-						<li>Monitoreo y escalabilidad</li>
-					</ul>
-				</div>
+      <!-- Aplicaciones Móviles -->
+      <div class="service-card" data-service>
+        <h3 class="service-title">Aplicaciones Móviles</h3>
+        <p class="service-description">
+          Apps híbridas y nativas con experiencia fluida en iOS y Android.
+        </p>
 
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<line x1="12" y1="1" x2="12" y2="23"></line>
-							<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-						</svg>
-					</div>
-					<h3 class="service-title">Automatización</h3>
-					<p class="service-description">
-						Automatiza procesos repetitivos y optimiza flujos de trabajo
-						para aumentar la eficiencia de tu equipo.
-					</p>
-					<ul class="service-features">
-						<li>Integraciones entre sistemas</li>
-						<li>Bots y scripts personalizados</li>
-						<li>Workflows automatizados</li>
-					</ul>
-				</div>
+        <div class="service-details">
+          <ul>
+            <li>React Native</li>
+            <li>Publicación en App Store y Play Store</li>
+            <li>Integración con sistemas y APIs</li>
+            <li>Diseño centrado en usabilidad</li>
+          </ul>
+        </div>
+      </div>
 
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-							<path d="M2 17l10 5 10-5"></path>
-							<path d="M2 12l10 5 10-5"></path>
-						</svg>
-					</div>
-					<h3 class="service-title">Bases de Datos</h3>
-					<p class="service-description">
-						Diseño, optimización y gestión de bases de datos escalables
-						para aplicaciones de alto rendimiento.
-					</p>
-					<ul class="service-features">
-						<li>PostgreSQL, MySQL, MongoDB</li>
-						<li>Optimización de queries</li>
-						<li>Data migration y modelado</li>
-					</ul>
-				</div>
+      <!-- E-commerce -->
+      <div class="service-card" data-service>
+        <h3 class="service-title">E-commerce</h3>
+        <p class="service-description">
+          Tiendas online eficientes y bien estructuradas listas para vender.
+        </p>
 
-				<div class="service-card">
-					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-						</svg>
-					</div>
-					<h3 class="service-title">Seguridad & Testing</h3>
-					<p class="service-description">
-						Aseguramos la calidad y seguridad de tu software con pruebas
-						exhaustivas y mejores prácticas.
-					</p>
-					<ul class="service-features">
-						<li>Testing automatizado (unit, e2e)</li>
-						<li>Auditorías de seguridad</li>
-						<li>Code review y QA</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="service-details">
+          <ul>
+            <li>Pasarelas de pago y checkout</li>
+            <li>Inventario, envíos y notificaciones</li>
+            <li>Panel de administración</li>
+            <li>Optimización de velocidad y conversión</li>
+          </ul>
+        </div>
+      </div>
 
-	<!-- Process Section -->
-	<section class="process">
-		<div class="process-container">
-			<div class="section-header">
-				<h2 class="section-title">Nuestro <span class="accent">Proceso</span></h2>
-				<p class="section-subtitle">
-					Una metodología probada que garantiza resultados excepcionales en cada proyecto
-				</p>
-			</div>
+    </div>
 
-			<div class="process-timeline">
-				<div class="process-step">
-					<div class="step-number">01</div>
-					<div class="step-content">
-						<h3 class="step-title">Discovery & Estrategia</h3>
-						<p class="step-description">
-							Analizamos a fondo tus necesidades, objetivos y desafíos. Definimos juntos
-							el alcance del proyecto y la estrategia tecnológica ideal.
-						</p>
-						<ul class="step-items">
-							<li>Reuniones iniciales y análisis de requerimientos</li>
-							<li>Definición de objetivos y KPIs</li>
-							<li>Propuesta técnica y roadmap</li>
-						</ul>
-					</div>
-				</div>
+  </div>
+</section>
 
-				<div class="process-step">
-					<div class="step-number">02</div>
-					<div class="step-content">
-						<h3 class="step-title">Diseño & Planificación</h3>
-						<p class="step-description">
-							Creamos wireframes, prototipos y arquitectura técnica. Planificamos
-							cada sprint asegurando entregas de valor constantes.
-						</p>
-						<ul class="step-items">
-							<li>UX/UI design y prototipos interactivos</li>
-							<li>Arquitectura de software y base de datos</li>
-							<li>Sprint planning y estimaciones</li>
-						</ul>
-					</div>
-				</div>
 
-				<div class="process-step">
-					<div class="step-number">03</div>
-					<div class="step-content">
-						<h3 class="step-title">Desarrollo Ágil</h3>
-						<p class="step-description">
-							Desarrollamos tu solución con metodologías ágiles, entregas iterativas
-							y comunicación constante para ajustar según sea necesario.
-						</p>
-						<ul class="step-items">
-							<li>Desarrollo en sprints de 2 semanas</li>
-							<li>Code reviews y pair programming</li>
-							<li>Demos y feedback continuo</li>
-						</ul>
-					</div>
-				</div>
+	<!-- Process Section
+<section class="process">
+  <div class="process-container">
+    <div class="section-header">
+      <h2 class="section-title">Nuestro <span class="accent">Proceso</span></h2>
+      <p class="section-subtitle">
+        Una forma de trabajar clara, ágil y enfocada en resultados reales.
+      </p>
+    </div>
 
-				<div class="process-step">
-					<div class="step-number">04</div>
-					<div class="step-content">
-						<h3 class="step-title">Testing & QA</h3>
-						<p class="step-description">
-							Realizamos pruebas exhaustivas para garantizar la calidad, seguridad
-							y rendimiento óptimo de tu aplicación.
-						</p>
-						<ul class="step-items">
-							<li>Testing automatizado (unit, integration, e2e)</li>
-							<li>QA manual y pruebas de usabilidad</li>
-							<li>Performance y security testing</li>
-						</ul>
-					</div>
-				</div>
+    <div class="process-timeline">
 
-				<div class="process-step">
-					<div class="step-number">05</div>
-					<div class="step-content">
-						<h3 class="step-title">Deploy & Lanzamiento</h3>
-						<p class="step-description">
-							Desplegamos tu solución en producción con las mejores prácticas
-							DevOps, asegurando un lanzamiento sin contratiempos.
-						</p>
-						<ul class="step-items">
-							<li>Configuración de infraestructura cloud</li>
-							<li>CI/CD pipelines automatizados</li>
-							<li>Monitoreo y alertas en tiempo real</li>
-						</ul>
-					</div>
-				</div>
+      <div class="process-step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3 class="step-title">Discovery</h3>
+          <p class="step-description">
+            Entendemos tu idea, tus objetivos y lo que tu negocio realmente necesita.
+          </p>
+        </div>
+      </div>
 
-				<div class="process-step">
-					<div class="step-number">06</div>
-					<div class="step-content">
-						<h3 class="step-title">Soporte & Evolución</h3>
-						<p class="step-description">
-							Te acompañamos después del lanzamiento con mantenimiento continuo,
-							actualizaciones y nuevas funcionalidades según tu negocio crece.
-						</p>
-						<ul class="step-items">
-							<li>Soporte técnico y mantenimiento</li>
-							<li>Actualizaciones y mejoras continuas</li>
-							<li>Nuevas features y escalabilidad</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <div class="process-step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3 class="step-title">Diseño</h3>
+          <p class="step-description">
+            Creamos la estructura, la experiencia y el diseño que dará forma al producto.
+          </p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3 class="step-title">Desarrollo</h3>
+          <p class="step-description">
+            Construimos tu solución con un proceso ágil, iterativo y transparente.
+          </p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3 class="step-title">Testing</h3>
+          <p class="step-description">
+            Probamos a fondo el producto para asegurar estabilidad, seguridad y buen rendimiento.
+          </p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">05</div>
+        <div class="step-content">
+          <h3 class="step-title">Deploy</h3>
+          <p class="step-description">
+            Lanzamos tu aplicación en producción con buenas prácticas y monitoreo activo.
+          </p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">06</div>
+        <div class="step-content">
+          <h3 class="step-title">Evolución</h3>
+          <p class="step-description">
+            Te acompañamos después del lanzamiento con mejoras, soporte y nuevas funcionalidades.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>. -->
+
+
 
 	<!-- Projects Section -->
 	<section id="proyectos" class="projects">
@@ -448,329 +320,107 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 	<!-- About Section -->
-	<section id="nosotros" class="about">
-		<div class="about-container">
-			<div class="about-content">
-				<div class="about-text">
-					<h2 class="section-title">¿Quiénes somos <span class="accent">tiinto</span>?</h2>
-					<p class="about-description">
-						Somos un equipo apasionado de desarrolladores, diseñadores y consultores tecnológicos
-						comprometidos con transformar ideas en soluciones digitales excepcionales.
-					</p>
-					<p class="about-description">
-						Con años de experiencia en el desarrollo de software, hemos ayudado a empresas de todos
-						los tamaños a alcanzar sus objetivos digitales. Desde startups innovadoras hasta
-						corporaciones establecidas, nuestro enfoque siempre es el mismo: entender profundamente
-						tu negocio para crear soluciones que realmente generen impacto.
-					</p>
-					<div class="about-values">
-						<div class="value-item">
-							<div class="value-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<polyline points="20 6 9 17 4 12"></polyline>
-								</svg>
-							</div>
-							<div class="value-content">
-								<h4 class="value-title">Calidad Superior</h4>
-								<p class="value-text">Código limpio, escalable y mantenible en cada proyecto</p>
-							</div>
-						</div>
-						<div class="value-item">
-							<div class="value-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-									<circle cx="9" cy="7" r="4"></circle>
-									<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-									<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-								</svg>
-							</div>
-							<div class="value-content">
-								<h4 class="value-title">Colaboración</h4>
-								<p class="value-text">Trabajamos codo a codo contigo en cada etapa</p>
-							</div>
-						</div>
-						<div class="value-item">
-							<div class="value-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-								</svg>
-							</div>
-							<div class="value-content">
-								<h4 class="value-title">Innovación</h4>
-								<p class="value-text">Utilizamos las tecnologías más modernas y eficientes</p>
-							</div>
-						</div>
-						<div class="value-item">
-							<div class="value-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<circle cx="12" cy="12" r="10"></circle>
-									<polyline points="12 6 12 12 16 14"></polyline>
-								</svg>
-							</div>
-							<div class="value-content">
-								<h4 class="value-title">Compromiso</h4>
-								<p class="value-text">Entregamos resultados a tiempo sin comprometer calidad</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="about-stats">
-					<div class="stat-card">
-						<div class="stat-number">50+</div>
-						<div class="stat-label">Proyectos Completados</div>
-					</div>
-					<div class="stat-card">
-						<div class="stat-number">30+</div>
-						<div class="stat-label">Clientes Satisfechos</div>
-					</div>
-					<div class="stat-card">
-						<div class="stat-number">5+</div>
-						<div class="stat-label">Años de Experiencia</div>
-					</div>
-					<div class="stat-card">
-						<div class="stat-number">100%</div>
-						<div class="stat-label">Dedicación</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<section id="nosotros" class="about">
+  <div class="about-container">
+    <div class="about-content">
+
+      <div class="about-text">
+        <h2 class="section-title">¿Quiénes somos <span class="accent">Tiinto</span>?</h2>
+
+        <p class="about-description">
+          Somos un equipo de desarrolladores, diseñadores y consultores tecnológicos que disfruta crear productos digitales funcionales, claros y bien hechos.
+        </p>
+
+        <p class="about-description">
+          Hemos trabajado con startups y empresas consolidadas, siempre con un enfoque sencillo: entender tu negocio y construir soluciones digitales estables, seguras y listas para crecer.
+        </p>
+
+        <div class="about-values">
+
+          <div class="value-item">
+            <div class="value-icon">✔️</div>
+            <div class="value-content">
+              <h4 class="value-title">Calidad</h4>
+              <p class="value-text">Código limpio, estable y fácil de mantener.</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">🤝</div>
+            <div class="value-content">
+              <h4 class="value-title">Colaboración</h4>
+              <p class="value-text">Trabajamos contigo de manera cercana y transparente.</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">✨</div>
+            <div class="value-content">
+              <h4 class="value-title">Diseño & Ingeniería</h4>
+              <p class="value-text">Soluciones modernas, claras y bien pensadas.</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">⏱️</div>
+            <div class="value-content">
+              <h4 class="value-title">Responsabilidad</h4>
+              <p class="value-text">Cumplimos tiempos sin comprometer la calidad.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Proyectos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Clientes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Años</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Compromiso</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 	<!-- Contact Section -->
-	<section id="contacto" class="contact">
-		<div class="contact-container">
-			<div class="section-header">
-				<h2 class="section-title">¿Listo para <span class="accent">empezar</span>?</h2>
-				<p class="section-subtitle">
-					Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas
-				</p>
-			</div>
+<section id="contacto" class="contact">
+  <div class="contact-container">
 
-			<div class="contact-content">
-				<div class="contact-form-wrapper">
-					<form class="contact-form">
-						<div class="form-row">
-							<div class="form-group">
-								<label for="name">Nombre completo</label>
-								<input type="text" id="name" name="name" placeholder="Tu nombre" required>
-							</div>
-							<div class="form-group">
-								<label for="email">Email</label>
-								<input type="email" id="email" name="email" placeholder="tu@email.com" required>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="form-group">
-								<label for="company">Empresa</label>
-								<input type="text" id="company" name="company" placeholder="Nombre de tu empresa">
-							</div>
-							<div class="form-group">
-								<label for="phone">Teléfono</label>
-								<input type="tel" id="phone" name="phone" placeholder="+1 234 567 890">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="service">¿Qué servicio te interesa?</label>
-							<select id="service" name="service">
-								<option value="">Selecciona un servicio</option>
-								<option value="web">Desarrollo Web</option>
-								<option value="mobile">Aplicaciones Móviles</option>
-								<option value="api">APIs & Backend</option>
-								<option value="consulting">Consultoría Tech</option>
-								<option value="devops">DevOps & Cloud</option>
-								<option value="automation">Automatización</option>
-								<option value="database">Bases de Datos</option>
-								<option value="security">Seguridad & Testing</option>
-								<option value="other">Otro</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="message">Mensaje</label>
-							<textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
-						</div>
-						<button type="submit" class="btn-submit">Enviar mensaje</button>
-					</form>
-				</div>
+    <div class="section-header">
+      <h2 class="section-title">¿Tienes una <span class="accent">idea</span>?</h2>
 
-				<div class="contact-info">
-					<div class="info-card">
-						<div class="info-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-								<polyline points="22,6 12,13 2,6"></polyline>
-							</svg>
-						</div>
-						<div class="info-content">
-							<h4>Email</h4>
-							<p>hola@tiinto.com</p>
-						</div>
-					</div>
+      <p class="section-subtitle">
+      Contáctanos, queremos escucharte
+        <a href="mailto:hola@tiinto.com" class="contact-inline-email">hola@tiinto.com</a>
+      </p>
+    </div>
 
-					<div class="info-card">
-						<div class="info-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-							</svg>
-						</div>
-						<div class="info-content">
-							<h4>Teléfono</h4>
-							<p>+1 (555) 123-4567</p>
-						</div>
-					</div>
+  </div>
 
-					<div class="info-card">
-						<div class="info-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-								<circle cx="12" cy="10" r="3"></circle>
-							</svg>
-						</div>
-						<div class="info-content">
-							<h4>Ubicación</h4>
-							<p>Trabajamos remotamente</p>
-						</div>
-					</div>
+</section>
 
-					<div class="info-card">
-						<div class="info-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<circle cx="12" cy="12" r="10"></circle>
-								<polyline points="12 6 12 12 16 14"></polyline>
-							</svg>
-						</div>
-						<div class="info-content">
-							<h4>Horario</h4>
-							<p>Lun - Vie: 9:00 - 18:00</p>
-						</div>
-					</div>
 
-					<div class="social-links">
-						<h4>Síguenos</h4>
-						<div class="social-icons">
-							<a href="#" class="social-icon" aria-label="LinkedIn">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-									<rect x="2" y="9" width="4" height="12"></rect>
-									<circle cx="4" cy="4" r="2"></circle>
-								</svg>
-							</a>
-							<a href="#" class="social-icon" aria-label="Twitter">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-								</svg>
-							</a>
-							<a href="#" class="social-icon" aria-label="GitHub">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-								</svg>
-							</a>
-							<a href="#" class="social-icon" aria-label="Instagram">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-									<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-									<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Footer -->
 	<footer class="footer">
-		<div class="footer-container">
-			<div class="footer-content">
-				<div class="footer-brand">
-					<div class="footer-logo">tiinto</div>
-					<p class="footer-description">
-						Transformamos ideas en soluciones digitales excepcionales.
-						Tu partner tecnológico de confianza.
-					</p>
-					<div class="footer-social">
-						<a href="#" class="footer-social-icon" aria-label="LinkedIn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-								<rect x="2" y="9" width="4" height="12"></rect>
-								<circle cx="4" cy="4" r="2"></circle>
-							</svg>
-						</a>
-						<a href="#" class="footer-social-icon" aria-label="Twitter">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-							</svg>
-						</a>
-						<a href="#" class="footer-social-icon" aria-label="GitHub">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-							</svg>
-						</a>
-						<a href="#" class="footer-social-icon" aria-label="Instagram">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-								<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-								<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-							</svg>
-						</a>
-					</div>
-				</div>
+  <div class="footer-container">
+    <div class="footer-logo">Tiinto</div>
+    <p class="footer-copy">© 2025</p>
+  </div>
+</footer>
 
-				<div class="footer-links">
-					<div class="footer-column">
-						<h4 class="footer-title">Servicios</h4>
-						<ul class="footer-list">
-							<li><a href="#servicios">Desarrollo Web</a></li>
-							<li><a href="#servicios">Apps Móviles</a></li>
-							<li><a href="#servicios">APIs & Backend</a></li>
-							<li><a href="#servicios">Consultoría Tech</a></li>
-						</ul>
-					</div>
 
-					<div class="footer-column">
-						<h4 class="footer-title">Empresa</h4>
-						<ul class="footer-list">
-							<li><a href="#nosotros">Nosotros</a></li>
-							<li><a href="#proyectos">Proyectos</a></li>
-							<li><a href="#contacto">Contacto</a></li>
-							<li><a href="#">Blog</a></li>
-						</ul>
-					</div>
-
-					<div class="footer-column">
-						<h4 class="footer-title">Legal</h4>
-						<ul class="footer-list">
-							<li><a href="#">Privacidad</a></li>
-							<li><a href="#">Términos</a></li>
-							<li><a href="#">Cookies</a></li>
-						</ul>
-					</div>
-
-					<div class="footer-column">
-						<h4 class="footer-title">Contacto</h4>
-						<ul class="footer-list">
-							<li>hola@tiinto.com</li>
-							<li>+1 (555) 123-4567</li>
-							<li>Lun - Vie: 9:00 - 18:00</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer-bottom">
-				<p class="footer-copyright">
-					© 2025 tiinto. Todos los derechos reservados.
-				</p>
-				<div class="footer-bottom-links">
-					<a href="#">Privacidad</a>
-					<span class="separator">•</span>
-					<a href="#">Términos</a>
-					<span class="separator">•</span>
-					<a href="#">Cookies</a>
-				</div>
-			</div>
-		</div>
-	</footer>
 </Layout>
 
 <style>
@@ -781,7 +431,7 @@ import Layout from '../layouts/Layout.astro';
 		left: 0;
 		right: 0;
 		z-index: 1000;
-		background: rgba(10, 10, 10, 0.8);
+		background: rgba(25, 24, 24, 0.8);
 		backdrop-filter: blur(12px);
 		border-bottom: 1px solid rgba(240, 188, 183, 0.1);
 	}
@@ -896,7 +546,7 @@ import Layout from '../layouts/Layout.astro';
 		font-weight: 700;
 		line-height: 1.1;
 		margin-bottom: 1.5rem;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		letter-spacing: -0.02em;
 	}
 
@@ -907,7 +557,7 @@ import Layout from '../layouts/Layout.astro';
 
 	.hero-subtitle {
 		font-size: clamp(1rem, 2vw, 1.25rem);
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		line-height: 1.7;
 		margin-bottom: 2.5rem;
 		max-width: 600px;
@@ -1030,13 +680,13 @@ import Layout from '../layouts/Layout.astro';
 		font-size: clamp(2rem, 4vw, 3rem);
 		font-weight: 700;
 		margin-bottom: 1rem;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		letter-spacing: -0.02em;
 	}
 
 	.section-subtitle {
 		font-size: clamp(1rem, 2vw, 1.2rem);
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		max-width: 700px;
 		margin: 0 auto;
 		line-height: 1.7;
@@ -1104,13 +754,13 @@ import Layout from '../layouts/Layout.astro';
 	.service-title {
 		font-size: 1.5rem;
 		font-weight: 700;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		margin-bottom: 1rem;
 	}
 
 	.service-description {
 		font-size: 1rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
 	}
@@ -1184,7 +834,7 @@ import Layout from '../layouts/Layout.astro';
 	.step-title {
 		font-size: 1.5rem;
 		font-weight: 700;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		margin-bottom: 1rem;
 		transition: color 0.3s ease;
 	}
@@ -1195,7 +845,7 @@ import Layout from '../layouts/Layout.astro';
 
 	.step-description {
 		font-size: 1rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
 	}
@@ -1317,13 +967,13 @@ import Layout from '../layouts/Layout.astro';
 	.project-title {
 		font-size: 1.5rem;
 		font-weight: 700;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		margin-bottom: 1rem;
 	}
 
 	.project-description {
 		font-size: 1rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
 		flex-grow: 1;
@@ -1351,7 +1001,7 @@ import Layout from '../layouts/Layout.astro';
 
 	.metric-label {
 		font-size: 0.85rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 	}
 
 	/* About Section */
@@ -1379,7 +1029,7 @@ import Layout from '../layouts/Layout.astro';
 
 	.about-description {
 		font-size: 1.1rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		line-height: 1.8;
 		margin-bottom: 1.5rem;
 	}
@@ -1417,13 +1067,13 @@ import Layout from '../layouts/Layout.astro';
 	.value-title {
 		font-size: 1.1rem;
 		font-weight: 600;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		margin-bottom: 0.25rem;
 	}
 
 	.value-text {
 		font-size: 0.9rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		line-height: 1.5;
 	}
 
@@ -1458,14 +1108,19 @@ import Layout from '../layouts/Layout.astro';
 
 	.stat-label {
 		font-size: 0.95rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		font-weight: 500;
 	}
 
+  .section-header[data-astro-cid-j7pv25f6] {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
 	/* Contact Section */
 	.contact {
-		padding: 6rem 2rem;
-		background: rgba(10, 10, 10, 0.5);
+		padding: 1rem 1.3rem !important;
+		background: rgba(0, 0, 0, 0.5);
 	}
 
 	.contact-container {
@@ -1476,8 +1131,8 @@ import Layout from '../layouts/Layout.astro';
 	.contact-content {
 		display: grid;
 		grid-template-columns: 1.5fr 1fr;
-		gap: 4rem;
-		margin-top: 4rem;
+		gap: 2rem;
+		margin-top: 2rem;
 	}
 
 	.contact-form {
@@ -1485,6 +1140,11 @@ import Layout from '../layouts/Layout.astro';
 		flex-direction: column;
 		gap: 1.5rem;
 	}
+
+  .contact[data-astro-cid-j7pv25f6] {
+    padding: 6rem 2rem;
+    background: #0a0a0acc;
+}
 
 	.form-row {
 		display: grid;
@@ -1593,13 +1253,13 @@ import Layout from '../layouts/Layout.astro';
 	.info-content h4 {
 		font-size: 1rem;
 		font-weight: 600;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		margin-bottom: 0.25rem;
 	}
 
 	.info-content p {
 		font-size: 0.95rem;
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 	}
 
 	.social-links {
@@ -1613,7 +1273,7 @@ import Layout from '../layouts/Layout.astro';
 	.social-links h4 {
 		font-size: 1rem;
 		font-weight: 600;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		margin-bottom: 1rem;
 	}
 
@@ -1645,7 +1305,6 @@ import Layout from '../layouts/Layout.astro';
 	/* Footer */
 	.footer {
 		background: rgba(10, 10, 10, 0.8);
-		border-top: 1px solid rgba(240, 188, 183, 0.1);
 		padding: 4rem 2rem 2rem;
 	}
 
@@ -1677,7 +1336,7 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.footer-description {
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		line-height: 1.7;
 		max-width: 400px;
 	}
@@ -1723,7 +1382,7 @@ import Layout from '../layouts/Layout.astro';
 	.footer-title {
 		font-size: 1rem;
 		font-weight: 600;
-		color: #ffffff;
+		color: #e7e2e2ff;
 		margin-bottom: 0.5rem;
 	}
 
@@ -1737,13 +1396,13 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.footer-list li {
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		font-size: 0.95rem;
 		line-height: 1.5;
 	}
 
 	.footer-list a {
-		color: #a1a1aa;
+		color: #d3d3d8ff;
 		text-decoration: none;
 		transition: color 0.3s ease;
 	}
@@ -1947,7 +1606,20 @@ import Layout from '../layouts/Layout.astro';
 			flex-direction: column;
 			text-align: center;
 		}
+
 	}
+
+  .section-subtitle a {
+	color: #F0BCB7;
+	text-decoration: none;
+	font-weight: 500;
+	transition: opacity 0.2s ease;
+}
+
+.section-subtitle a:hover {
+	opacity: 0.7;
+}
+
 
 	@media (max-width: 480px) {
 		.logo {
