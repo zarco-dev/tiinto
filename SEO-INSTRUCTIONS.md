@@ -1,4 +1,4 @@
-# 🚀 Guía SEO Completa para Tiinto.com
+# 🚀 Guía SEO Completa para tiinto.com
 
 ## ✅ Optimizaciones Implementadas
 
