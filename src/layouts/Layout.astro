@@ -1,17 +1,173 @@
+---
+import SEO from '../components/SEO.astro';
+---
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Componente SEO con Analytics -->
+		<SEO />
+
+		<!-- SEO Meta Tags Esenciales -->
+		<title>Tiinto - Desarrollo de Software a Medida | Aplicaciones Web</title>
+		<meta name="description" content="Empresa líder en desarrollo de software personalizado. Creamos aplicaciones web, y sistemas empresariales que transforman tu negocio. Consultoría tecnológica experta." />
+		<meta name="keywords" content="desarrollo software, aplicaciones web, apps móviles, software a medida, desarrollo personalizado, consultoría tecnológica, transformación digital, desarrollo web, React, Next.js, Flutter, software empresarial, ruby, rails, medellin, landing" />
+		<meta name="author" content="Tiinto" />
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<link rel="canonical" href="https://tiinto.com/" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://tiinto.com/" />
+		<meta property="og:title" content="Tiinto - Desarrollo de Software a Medida | Aplicaciones Web" />
+		<meta property="og:description" content="Empresa líder en desarrollo de software personalizado. Creamos aplicaciones web, y sistemas empresariales que transforman tu negocio." />
+		<meta property="og:image" content="https://tiinto.com/og-image.jpg" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Tiinto" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://tiinto.com/" />
+		<meta property="twitter:title" content="Tiinto - Desarrollo de Software a Medida" />
+		<meta property="twitter:description" content="Empresa líder en desarrollo de software personalizado. Creamos aplicaciones que transforman tu negocio." />
+		<meta property="twitter:image" content="https://tiinto.com/twitter-image.jpg" />
+
+		<!-- Favicon y Apple Touch Icons -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="theme-color" content="#0a0a0a" />
+
+		<!-- Performance y SEO técnico -->
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-		<title>Tiinto</title>
+
+		<!-- Generator -->
+		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
 		<slot />
+
+		<!-- Schema.org JSON-LD para SEO -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Tiinto",
+			"alternateName": "Tiinto Software",
+			"url": "https://tiinto.com",
+			"logo": "https://tiinto.com/logo.png",
+			"description": "Empresa líder en desarrollo de software personalizado. Creamos aplicaciones web, y sistemas empresariales.",
+			"foundingDate": "2024",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "ES"
+			},
+			"sameAs": [
+				"https://www.linkedin.com/company/tiinto",
+				"https://twitter.com/tiinto",
+				"https://github.com/tiinto"
+			],
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"contactType": "sales",
+				"email": "contacto@tiinto.com",
+				"availableLanguage": ["Spanish", "English"]
+			},
+			"offers": {
+				"@type": "AggregateOffer",
+				"priceCurrency": "USD",
+				"offerCount": "4",
+				"offers": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Desarrollo Web",
+							"description": "Aplicaciones web modernas y escalables con React, Next.js, Vue, Astro"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Aplicaciones Móviles",
+							"description": "Apps nativas y multiplataforma para iOS y Android"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Consultoría Tecnológica",
+							"description": "Asesoramiento experto en transformación digital"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Software Empresarial",
+							"description": "Sistemas ERP y CRM personalizados"
+						}
+					}
+				]
+			}
+		}
+		</script>
+
+		<!-- BreadcrumbList Schema -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Inicio",
+					"item": "https://tiinto.com"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Servicios",
+					"item": "https://tiinto.com#servicios"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Proyectos",
+					"item": "https://tiinto.com#proyectos"
+				}
+			]
+		}
+		</script>
+
+		<!-- WebSite Schema con SearchAction -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"url": "https://tiinto.com",
+			"name": "Tiinto",
+			"description": "Desarrollo de Software a Medida",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": {
+					"@type": "EntryPoint",
+					"urlTemplate": "https://tiinto.com/buscar?q={search_term_string}"
+				},
+				"query-input": "required name=search_term_string"
+			}
+		}
+		</script>
 	</body>
 </html>
 

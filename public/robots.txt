@@ -1,0 +1,44 @@
+# Robots.txt para Tiinto.com
+# Optimizado para SEO máximo
+
+# Permitir acceso completo a todos los bots de búsqueda
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+Crawl-delay: 0
+
+# Googlebot específico
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bingbot específico
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Bots de redes sociales para mejor compartición
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://tiinto.com/sitemap.xml
+Sitemap: https://tiinto.com/sitemap-index.xml
+
+# Host preferido
+Host: https://tiinto.com
